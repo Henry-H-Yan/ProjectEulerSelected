@@ -41,8 +41,9 @@ public class p012 {
 			if (n % i == 0)
 				count += 2;
 		}
-		if (end * end == n)  // num is perfect square
+		if (end * end == n) { // num is perfect square
 			count++;
+		}
 		return count;
 	}
 
