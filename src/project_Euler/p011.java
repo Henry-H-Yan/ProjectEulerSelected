@@ -8,9 +8,11 @@ public class p011 {
 	    int[] ways = new int[TOTAL + 1];
 	    ways[0] = 1;
 
+	    // dynamic programming,
+	    // subproblem: ways[i] means the number of ways i can be constructed
 	    for (int coin : coins) {
 	        for (int j = coin; j <= TOTAL; j++) {
-	            ways[j] += ways[j - coin];
+	        	if(j - coin>=0)	 ways[j] += ways[j - coin];
 	        }
 	    }
 
