@@ -38,8 +38,7 @@ public class p012 {
 		int count = 0;
 		int end = (int) Math.sqrt(n);
 		for (int i = 1; i < end; i++) {
-			if (n % i == 0)
-				count += 2;
+			if (n % i == 0)				count += 2;
 		}
 		if (end * end == n) { // num is perfect square
 			count++;
