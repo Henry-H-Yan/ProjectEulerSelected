@@ -4,18 +4,14 @@ import java.math.BigInteger;
 
 public class p013 {
 	public static void main(String[] args) {
-		System.out.println(new p013().run());
-	}
-	
-	
-	public String run() {
+
 		BigInteger sum = BigInteger.ZERO;
 		for (String num : INPUTS)
 			sum = sum.add(new BigInteger(num));
-		return sum.toString().substring(0, 10);
+		System.out.println(    sum.toString().substring(0, 10 ));
 	}
-	
-	
+
+
 	private static String[] INPUTS = {
 		"37107287533902102798797998220837590246510135740250",
 		"46376937677490009712648124896970078050417018260538",
