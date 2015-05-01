@@ -22,15 +22,16 @@ public class p020 {
 		}
 		
 	}
-	
+	int max;
 	public int getMax(int row, int col, int cur, int num){
 		if(num==0) return cur;
+		
 		if(row<0 || row>= INPUT.length|| col<0 || col>= INPUT[0].length) return 0;
 		cur=cur*INPUT [row] [col];
 		int[] dx={-1,-1,-1,0,1,1, 1,0};
 		int[] dy={-1, 0, 1,1,1,0,-1,1};
 		for(int i=0;i<dx.length;i++){
-			
+			max=Math.max (max )
 		}
 		
 	}
